@@ -1,0 +1,20 @@
+<div>
+    <h1>All Posts</h1>
+    <div>
+
+        {{#if posts.length}}
+            {{#each posts as |post|}}
+            <div class="postClass">
+                <h4>{{post.title}}</h4>
+                <p>{{post.createdAt}}</p>
+                
+                <button class="viewPostBtn" data-id="{{post.id}}">View Post</button>
+            </div></br>
+            {{/each}}
+        </div>
+        {{/if}}
+
+    </div>
+</div>
+
+<script src="./js/homepage.js"></script>

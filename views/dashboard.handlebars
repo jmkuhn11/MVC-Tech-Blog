@@ -1,0 +1,25 @@
+
+<div>
+    <h1>Dashboard</h1>
+    <div>
+
+        {{#if posts.length}}
+            {{#each posts as |post|}}
+            <div class="postClass">
+                <div class="col-md-8">
+                    <h4>{{post.title}}</h4>
+                    <p>{{post.body}}</p>
+                </div>
+                <div class="col-md-4">
+                    <button class="deletePostBtn" data-id="{{post.id}}">Delete</button>
+                </div>
+            </div><br/>
+            {{/each}}
+        </div>
+        {{/if}}
+
+    </div>
+</div>
+
+<script src="./js/dashboard.js"></script>
+
