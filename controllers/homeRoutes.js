@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['id'],
+          attributes: ['username'],
         },
       ],
     });
@@ -31,19 +31,41 @@ router.get('/', async (req, res) => {
 router.get('/post/:id', async (req, res) => {
   try {
 
+    console.log("*********************************************************");
+    console.log("logged in:" + req.session.userId);
+    console.log("*********************************************************");
+
     const postData = await Post.findByPk(req.params.id, {
-      include: [
+
+        include: [
         {
-          model: User,
-          attributes: ['username'],
-        },
+          model: Comment,
+          attributes: ['body', 'username', 'postId'],
+          where: {
+            postId: req.params.id
+          },
+        }
       ],
     });
 
-    const post = postData.get({ plain: true });
     
+    const userData = await User.findByPk(req.session.userId, {});
+
+    const post = postData.get({ plain: true });
+
+    const user = userData.get({ plain: true });
+
+    console.log("*********************************************************");
+    console.log(post);
+    console.log("*********************************************************");
+
+    console.log("*********************************************************");
+    console.log(user);
+    console.log("*********************************************************");
+
     res.render('viewPost', {
       post,
+      user,
       logged_in: req.session.logged_in
     });
   } catch (err) {
@@ -129,5 +151,50 @@ router.get('/signup', (req, res) => {
 router.get('/viewPost', (req, res) => {
   res.render('viewPost');
 });
+
+
+
+
+/*
+Should probably be deleted - not used
+*/
+/*
+router.get('/addComment/:id', async (req, res) => {
+
+  try {
+
+    const comment = await Comment.create({
+      ...req.body,
+    });
+
+    const postData = await Post.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['username'],
+        },
+      ],
+      include: [
+        {
+          model: Comment,
+          attributes: ['body', 'username', 'postId'],
+          where: {
+            postId: req.params.id
+          },
+        }
+      ],
+    });
+  
+    const post = postData.get({ plain: true });
+
+    res.render('viewPost', {
+      post,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+*/
 
 module.exports = router;

@@ -1,14 +1,17 @@
 [
   {
-    "title": "Title1",
-    "body": "Body1"
+    "body": "Body1",
+    "username": "1234",
+    "postId": "1"
   },
   {
-    "title": "Title2",
-    "body": "Body2"
+    "body": "Body2",
+    "username": "1234",
+    "postId": "1"
   },
   {
-    "title": "Title3",
-    "body": "Body3"
+    "body": "Body3",
+    "username": "1234",
+    "postId": "1"
   }
 ]
