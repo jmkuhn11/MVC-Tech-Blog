@@ -1,6 +1,7 @@
 
 <div>
-    <h1>Dashboard</h1>
+    <h1 id="nav">Dashboard</h1>
+    <div class="yourPost">
         <div class="newPostDiv">
             <h2>New Post</h2>
             <div><input type="text" id="postTitle" name="postTitle" placeholder="Post Title"></input></div>
@@ -17,7 +18,7 @@
                 <button class="cancelUpdateBtn">Cancel</button>
             </div>
         </div>
-    <div>
+    </div>
 
     <div class="allPostsDiv">
         {{#if posts.length}}

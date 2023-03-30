@@ -1,4 +1,45 @@
+body {
+  background-color: rgb(125, 25, 63);
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
 .postClass {
     border: 2px solid black;
     padding: 2px;
+  }
+
+  nav {
+    text-decoration: solid;
+    background-color: beige;
+  }
+
+  #nav {
+    background-color: aliceblue;
+  }
+
+  a {
+    color: black;
+    font-size: 50px;
+    margin-right: 5%;
+    border-style: none;
+    border-radius: 5%;
+  }
+
+  .postClass {
+    background-color: white;
+  }
+
+  .yourPost {
+    background-color: blueviolet;
+    margin-bottom: 5%;
+  }
+
+  #comment {
+    background-color: blueviolet;
+    margin-top: 5%;
   }

@@ -1,14 +1,13 @@
 <div>
-    <h1>All Posts</h1>
+    <h1 id="nav">All Posts</h1>
     <div>
 
         {{#if posts.length}}
             {{#each posts as |post|}}
             <div class="postClass">
                 <h4>{{post.title}}</h4>
-                <p>{{post.User.username}}</p>
-                <p>{{format_date post.createdAt}}</p>
                 <p>{{post.body}}</p>
+                <p>{{post.User.username}} on {{format_date post.createdAt}}</p>
                 
                 <button class="viewPostBtn" data-id="{{post.id}}">View Post</button>
             </div></br>
