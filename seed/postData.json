@@ -1,47 +1,47 @@
 [
   {
-    "title": "Title1",
-    "body": "Body1",
+    "title": "Hello",
+    "body": "New post, who dis?",
     "userId": 1
   },
   {
-    "title": "Title2",
-    "body": "Body2",
+    "title": "Cheeky",
+    "body": "How about that airpline food?",
     "userId": 1
   },
   {
-    "title": "Title3",
-    "body": "Body3",
+    "title": "Sitcoms",
+    "body": "I love a good laugh",
     "userId": 1
   },
   {
-    "title": "Title4",
-    "body": "Body4",
-    "userId": 1
+    "title": "Mamma Mia",
+    "body": "Here I Go Again",
+    "userId": 3
   },
   {
-    "title": "Title5",
-    "body": "Body5",
-    "userId": 1
+    "title": "Meryl Streep",
+    "body": "You are MY Dancing Queen!!!",
+    "userId": 3
   },
   {
-    "title": "Title6",
-    "body": "Body6",
+    "title": "CARDINALS",
+    "body": "Go St. Louis!",
     "userId": 2
   },
   {
-    "title": "Title7",
-    "body": "Body7",
+    "title": "Cubs Suck",
+    "body": "I never realized I hated bears so much until I went to Chicago",
     "userId": 2
   },
   {
-    "title": "Title8",
-    "body": "Body8",
-    "userId": 2
+    "title": "Bad Romance",
+    "body": "I should have never entertained men",
+    "userId": 4
   },
   {
-    "title": "Title9",
-    "body": "Body9",
-    "userId": 2
+    "title": "Born This Way",
+    "body": "I was born this way!",
+    "userId": 4
   }
 ]
