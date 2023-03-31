@@ -2,7 +2,7 @@ const viewPost = async (event) => {
 
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
-
+alert("id is" + id);
     document.location.replace(`post/${id}`);
   }
 

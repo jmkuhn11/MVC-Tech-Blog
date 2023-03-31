@@ -34,32 +34,38 @@ router.get('/post/:id', async (req, res) => {
     console.log("*********************************************************");
     console.log("logged in:" + req.session.userId);
     console.log("*********************************************************");
+    console.log("*********************************************************");
+    console.log("POST ID IS:" + req.params.id);
+    console.log("*********************************************************");
 
     const postData = await Post.findByPk(req.params.id, {
 
+      
         include: [
         {
           model: Comment,
           attributes: ['body', 'username', 'postId'],
+        
           where: {
             postId: req.params.id
           },
         }
       ],
+      
     });
 
-    
-    const userData = await User.findByPk(req.session.userId, {});
-
     const post = postData.get({ plain: true });
-
-    const user = userData.get({ plain: true });
-
     console.log("*********************************************************");
+    console.log("NEW POST");
     console.log(post);
     console.log("*********************************************************");
 
+    
+    const userData = await User.findByPk(req.session.userId, {});
+    const user = userData.get({ plain: true });
+
     console.log("*********************************************************");
+    console.log("NEW USER");
     console.log(user);
     console.log("*********************************************************");
 
