@@ -49,7 +49,8 @@ router.get('/post/:id', async (req, res) => {
           where: {
             postId: req.params.id
           },
-        }
+          required: false
+        },
       ],
       
     });
