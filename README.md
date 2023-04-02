@@ -15,3 +15,14 @@ One will pull up the site on their browser and be taken to the homepage. They wi
 Link: https://glacial-forest-62769.herokuapp.com/
 
 Screenshots:
+
+![14-pic1](https://user-images.githubusercontent.com/122703273/229336881-7e46d226-e04c-426d-be06-499a8b819a91.JPG)
+
+![14-pic2](https://user-images.githubusercontent.com/122703273/229336894-74557739-4671-4f5f-887b-23478716b540.JPG)
+
+![14-pic3](https://user-images.githubusercontent.com/122703273/229336901-6d4105e2-2a92-45a5-87ef-3ddc354a65fe.JPG)
+
+![14-pic4](https://user-images.githubusercontent.com/122703273/229336910-a37096f3-3a5b-488b-942e-18e876cdea3c.JPG)
+
+![14-pic5](https://user-images.githubusercontent.com/122703273/229336919-701fbd47-33e1-4767-a5a6-49ba5c56b69b.JPG)
+
